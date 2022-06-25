@@ -1,0 +1,94 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>个人网页（自我介绍）</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body id="body">
+
+    <!-- 页眉 -->
+    <header>
+        <div class="content">
+            <div class="search"><input type="text" placeholder="可输入/我会动哦"></div>
+        </div>
+    </header>
+
+    <!-- 定义导航链接的部分，用于跳转不同页面 -->
+    <nav>
+        <ul class="nav content">
+            <li class="nav-item active">
+                <div> <a href="">首页</a></div>
+                <!-- 首页的导航栏在鼠标点击时特殊样式 -->
+                <div style="background-color:#ccc ;color: #fff;">小迪</div>
+            </li>
+            <li class="nav-item"><a href="1.html">我的中学</a></li>
+            <li class="nav-item"><a href="2.html">我的家乡</a></li>
+            <li class="nav-item"><a href="3.html">我的爱好</a></li>
+        </ul>
+    </nav>
+    <!-- 滚动文字+头像 -->
+    <marquee behavior="scroll" direction="left" scrollamount="10">
+        <font color="red" size="15px">欢迎来到小迪的个人网页</font><img style="width: 30px;position: relative;top: 6px;"
+            src="./images/头像.jpg" alt="">
+    </marquee>
+    
+    <main>
+        <div class="content">
+            <div style="overflow: hidden;width: 100%"><!-- 清除浮动-->
+                <aside>     <!--附属信息-->
+                    <h2>About Me</h2>
+                    <img src="images/头像.jpg" alt="自选图头像">
+                </aside>
+                <div class="message"><!-- 自我介绍的具体内容-->
+                    <ul>
+                        <li>
+                            <p>姓名：小迪</p>
+                        </li>
+                        <li>
+                            <p>
+                                性别：女
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                年龄：21
+                            </p>
+
+                        </li>
+                    </ul>
+                    <!-- 带数字序号的表 -->
+                    <ol>
+                        <li>
+                            <p>身份：学生</p>
+                        </li>
+                        <li>
+                            <p>联系方式：2539*******</p>
+                        </li>
+                        <li>
+                            <p>民族：汉族</p>
+                        </li>
+                        <li>
+                            <p>政治面貌：共青团员&积极分子</p>
+                        </li>
+
+                    </ol>
+
+
+
+
+
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- 页脚 -->
+    <footer>小迪的个人网页</footer>
+    <bgsound src="./others/HTML2.mp3" loop="infinite"></bgsound><!-- bgm 音乐-->
+    <audio id="au" style="display: none;" src="./others/HTML2.mp3" loop="loop" controls="controls"
+        autoplay="autoplay"></audio>
+</body>
+</html>

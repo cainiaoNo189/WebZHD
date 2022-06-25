@@ -1,0 +1,336 @@
+/* 默认样式 */
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    box-sizing: border-box;
+    font-size: 15px;
+    
+}
+
+/* 超链接的样式 */
+a {
+    text-decoration: none;
+}
+
+/* body部分的样式，背景渐变色 */
+body {
+    /* background:-webkit-gradient(linear, 0 0, 0 100%, from(rgba(137,227,253,0.9)), to(rgba(20, 63, 181, 0.9))); */
+    background-image: linear-gradient(to right , #7A88FF, #7AFFAF)
+}
+
+/* 嵌套包装的最外层 */
+.content {
+    width: 1000px;
+    margin: 0 auto;
+}
+
+/* 页面的头，统一样式 */
+header {
+    width: 100%;
+    height: 190px;
+    background: url("../images/head.jpg");
+    background-size: cover;
+}
+
+/* 导航标签 */
+nav {
+    width: 100%;
+    height: 60px;
+    border-bottom: 1px solid #ccc;
+}
+
+/* 页眉 search*/
+header .search {
+    float: right;
+    margin-top: 75px;
+}
+
+/* 页眉 search类下的input */
+header .search>input {
+    width: 260px;
+    height: 40px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    background: #fff;
+    padding: 0 10px;
+    transition: all .5s;
+}
+
+/* 动态效果，鼠标移上去有变化 */
+header .search>input:hover {
+    width: 360px;
+}
+
+/* 指定元素后插入 */
+.nav:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+/* 导航区大小 */
+.nav .nav-item {
+    float: left;
+    width: 200px;
+    height: 60px;
+    text-align: center;
+    line-height: 60px;
+    position: relative;
+    overflow: hidden;
+}
+
+.nav .nav-item:hover {
+    overflow: unset;
+}
+
+/* 超链接的颜色 */
+.nav .nav-item a {
+    color: #000;
+}
+
+/*  导航区,在该页面时字体变色  */
+.nav .nav-item.active a {
+    color: #6880fa;
+    font-weight: bold;
+}
+
+/* 不建立显示框类型 */
+.nav .nav-item .second {
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 60px;
+    display: none;
+    transition: all .5s;
+}
+
+.nav .nav-item .second .second-item {
+    width: 100%;
+    height: 60px;
+    text-align: center;
+    line-height: 60px;
+    background: #6880fa;
+}
+
+.nav .nav-item .second .second-item a {
+    color: #fff;
+}
+
+/* 布局,建立显示框类型 */
+.nav .nav-item:hover .second {
+    display: block;
+}
+
+
+/* 中间主要内容部分大小 */
+main {
+    width: 100%;
+    padding: 50px 0;
+}
+
+/* 浮动 */
+main aside {
+    float: left;
+    width: 280px;
+}
+
+/* 二级标题 */
+main aside h2 {
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+
+/* 分块 */
+main aside>img {
+    display: block;
+    width: 100%;
+}
+
+/* 段落里面的内容 */
+.content .message {
+    float: right;
+    width: 580px;
+    padding-top: 70px;
+}
+
+/* 申明列表属性 */
+.message ol li {
+    list-style: decimal;
+}
+
+.message ul li {
+    list-style: disc;
+}
+
+/* 段落属性 */
+.content .message p {
+    line-height: 40px;
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+.content .share {
+    width: 100%;
+    margin-top: 30px;
+}
+
+.content .share h3 {
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+
+.content .share p {
+    line-height: 30px;
+    margin-bottom: 20px;
+    text-indent: 2em;
+}
+
+/*  */
+.member {
+    float: left;
+    width: 230px;
+    border-radius: 8px;
+    border: 1px solid #6880fa;
+    padding: 10px;
+    margin: 0 10px;
+}
+
+.member>img {
+    display: block;
+    width: 100%;
+}
+
+.member .name {
+    font-size: 20px;
+    text-align: center;
+    margin: 10px 0;
+}
+
+.member p {
+    color: #666;
+    line-height: 30px;
+}
+
+/* 介绍高中的段落样式 */
+.education {
+    width: 100%;
+}
+
+.education>img {
+    display: block;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+/* 文字居中和大小 */
+.education h5 {
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+.education p {
+    margin-bottom: 30px;
+    color: #666;
+    line-height: 25px;
+}
+
+
+.contact {
+    width: 700px;
+    margin: 0 auto;
+    text-align: left;
+    padding: 30px 0;
+    overflow: hidden;
+}
+
+/* 表居中，行高设置 */
+.contact ul li {
+    line-height: 24px;
+    margin-top: 16px;
+    text-decoration: none;
+    list-style: none;
+}
+
+.contact ul li span {
+    vertical-align: middle;
+    padding-right: 12px;
+}
+
+.contact ul li .message_in {
+    width: 600px;
+    height: 40px;
+    border: 1px solid #999999;
+    vertical-align: middle;
+    line-height: 22px;
+}
+
+.contact ul li .message_te {
+    width: 600px;
+    height: 90px;
+    border: 1px solid #999999;
+    vertical-align: middle;
+    line-height: 18px;
+}
+
+.contact ul li .message_btn {
+    width: 64px;
+    height: 20px;
+    line-height: 20px;
+    color: #FFFFFF;
+    font-weight: bold;
+    cursor: hand;
+}
+
+/* 标题居中变色 */
+.title {
+    text-align: center;
+    font-size: 30px;
+    color: #6880fa;
+    transform: rotate(10deg);
+}
+
+/* 溢出时隐藏 */
+.work {
+    width: 100%;
+    overflow: hidden;
+}
+
+.work li {
+    float: left;
+    width: 310px;
+    margin: 20px 10px;
+}
+
+.work li a>img {
+    display: block;
+    width: 100%;
+}
+
+.work li>p {
+    line-height: 60px;
+    text-align: center;
+    background: #ccc;
+}
+
+/* 表格居中+背景+文字大小和颜色 */
+.top {
+    background: url("../images/背景3.jpg");
+    width: 1000px;
+    height: 420px;
+    font-size: 35px;
+    margin: auto;
+    text-align: center;
+    color:wheat;
+
+}
+
+/* 页脚区，文字居中，白色 */
+footer {
+        width: 100%;
+        height: 60px;
+        line-height: 60px;
+        text-align: center;
+        color: #fff;
+}
